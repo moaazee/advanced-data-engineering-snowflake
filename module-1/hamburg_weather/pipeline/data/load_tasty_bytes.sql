@@ -35,6 +35,12 @@ CREATE OR REPLACE WAREHOUSE demo_build_wh
    INITIALLY_SUSPENDED = TRUE;
 
 
+
+USE DATABASE {{env}}_tasty_bytes;
+USE SCHEMA raw_pos;
+USE WAREHOUSE demo_build_wh;
+
+
 /*--
 file format and stage creation
 --*/
